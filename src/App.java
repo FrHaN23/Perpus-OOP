@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class App {
 		public static void main(String[] args) throws Exception {
-        Book buku = new Book();
+        bookList buku = new bookList();
 				Scanner in = new Scanner(System.in);
 				boolean isKeluar = false;
 				do{
