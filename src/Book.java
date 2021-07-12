@@ -37,7 +37,6 @@ public class Book {
         list.add(buku8);
         list.add(buku9);
         list.add(buku10);
-
     }
 
     public List<Book> getList() {
@@ -53,8 +52,6 @@ public class Book {
     }
 
     public void MasukkanBuku(){
-        
-
         List<Book> listToAdd = new ArrayList<Book>();
 
         System.out.println("Masukkan Nama buku: ");
