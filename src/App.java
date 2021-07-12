@@ -26,6 +26,10 @@ public class App {
 								case 3:
 								isKeluar = true;
                 in.close();
+                break;
+                default:
+                System.out.println("Pilihan Salah.");
+
 						}
 
 				}while(isKeluar!=true);
