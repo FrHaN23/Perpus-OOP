@@ -1,10 +1,8 @@
-import java.util.ArrayList;
 import java.util.List;
 
 public class bookList extends Book {
     public bookList(){
         super();
-        list = new ArrayList<Book>();
         Book buku1 = new Book("C++ for dummies", "Ujang", 1998, "SU", 500);
         Book buku2 = new Book("Wifumu Buriq", "Markona", 2001, "D", 20);
         Book buku3 = new Book("Wibu Nasionalis", "Inem", 2016, "SU", 40);
@@ -41,8 +39,6 @@ public class bookList extends Book {
     }
 
     public void MasukkanBuku(){
-        List<Book> listToAdd = new ArrayList<Book>();
-
         System.out.println("Masukkan Nama buku: ");
         String namaBuku = add.nextLine();
 
@@ -59,9 +55,8 @@ public class bookList extends Book {
         System.out.println("Masuukkan Stok saat ini: ");
         int stok = Integer.parseInt(add.nextLine());
     
-        Book newBuku = new Book(namaBuku, pengarangBuku, tahunTerbitBuku, kategoriBuku, stok);
-        listToAdd.add(newBuku);
-        list.addAll(listToAdd);
+        Book newBook = new Book(namaBuku, pengarangBuku, tahunTerbitBuku, kategoriBuku, stok);
+        list.add(newBook);
         System.out.println("Buku Berhasil ditambah");
         System.out.println("");
     }

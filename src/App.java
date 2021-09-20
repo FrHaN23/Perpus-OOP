@@ -24,15 +24,13 @@ public class App {
 									buku.MasukkanBuku();
 									break;
 								case 3:
-								isKeluar = true;
-                in.close();
-                break;
+									isKeluar = true;
+                	in.close();
+                	break;
                 default:
-                System.out.println("Pilihan Salah.");
-
+                  System.out.println("Pilihan Salah.");
 						}
-
-				}while(isKeluar!=true);
-
-		}
+          }
+          while(isKeluar!=true);
+  }
 }
